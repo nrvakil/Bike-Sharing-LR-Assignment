@@ -16,23 +16,6 @@ The company wants to understand the factors affecting the demand for these share
 
 We are using a dataset with filename 'day.csv'
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-#### Equation
-Count = 0.3814 * temp - 0.0896 * windspeed - 0.1079 * season_spring + 0.0755 * season_winter + 0.2383 * yr_2019 - 0.0663 * mnth_dec - 0.0568 * mnth_jan - 0.0640 * mnth_nov + 0.0567 * mnth_sep - 0.0717 * holiday_yes - 0.2469 * weathersit_rainy
-
-NOTE: As seen, some coefficients are negative, they show an inverse relation with the target variable
-
-#### Conclusions
-1. Highest positively affecting variable is 'temp'.
-2. Company should expand in Winter instead of Spring Season as the coefficient for Spring is negative.
-3. Company should avoid Nov, Dec and Jan months for expansion.
-4. Company should avoid Rainy weather and Holidays.
-5. Company should increase expansion every year since year 2019 coefficient is very high.
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
 ## Technologies Used
 1. numpy
 2. pandas
@@ -41,3 +24,15 @@ NOTE: As seen, some coefficients are negative, they show an inverse relation wit
 5. seaborn
 6. statsmodels
 7. sklearn
+
+## Conclusions
+#### Equation
+Count = 0.3814 * temp - 0.0896 * windspeed - 0.1079 * season_spring + 0.0755 * season_winter + 0.2383 * yr_2019 - 0.0663 * mnth_dec - 0.0568 * mnth_jan - 0.0640 * mnth_nov + 0.0567 * mnth_sep - 0.0717 * holiday_yes - 0.2469 * weathersit_rainy
+
+NOTE: As seen, some coefficients are negative, they show an inverse relation with the target variable
+
+1. Highest positively affecting variable is 'temp'.
+2. Company should expand in Winter instead of Spring Season as the coefficient for Spring is negative.
+3. Company should avoid Nov, Dec and Jan months for expansion.
+4. Company should avoid Rainy weather and Holidays.
+5. Company should increase expansion every year since year 2019 coefficient is very high.
